@@ -1,0 +1,29 @@
+Code 01 : composant fonctionnel (Greeting)
+Corriger la syntaxe :
+supprimer le ; parasite dans => ; {
+utiliser un seul nom pour la prop (nom en paramètre, name dans le JSX : choisir name)
+utiliser un seul nom de composant (Salut / Salutation deviennent Greeting)
+remettre les mots-clés JavaScript valides : import … from, return, export default
+Créer une interface GreetingProps pour décrire les props (name: string).
+Typer le paramètre déstructuré avec cette interface.
+Ajouter le type de retour React.JSX.Element.
+Commenter chaque étape dans le code.
+
+
+Code 02 : composant classe (Counter)
+Corriger la syntaxe :
+= > ; devient =>
+compte devient count, Composante devient Component, classe … étend devient class … extends
+fermer correctement le return ( … ) (supprimer le ; mal placé)
+exporter le compteur par défaut devient export default Counter
+Créer l’interface des props CounterProps (vide pour l’instant).
+Créer l’interface de l’état CounterState (count: number).
+Passer les types en génériques : Component<CounterProps, CounterState>.
+Typer la propriété state avec CounterState.
+Typer la méthode increment : fonction fléchée avec retour void.
+Utiliser la forme fonctionnelle de setState (prevState => …) pour éviter les erreurs de mise à jour asynchrone.
+Typer render() avec React.ReactNode.
+Commenter chaque étape dans le code.
+Étape finale : Vérifier
+Importer les deux composants dans App.tsx et les afficher.
+Lancer npm run dev avec Vite.
